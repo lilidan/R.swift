@@ -14,28 +14,39 @@ do {
 
   let xcodeproj = try Xcodeproj(url: callInformation.xcodeprojURL)
   let resourceURLs = try xcodeproj.resourceURLsForTarget(callInformation.targetName, pathResolver: pathResolverWithSourceTreeFolderToURLConverter(callInformation.URLForSourceTreeFolder))
-
-  let resources = Resources(resourceURLs: resourceURLs, fileManager: NSFileManager.defaultManager())
-
-  let (internalStruct, externalStruct) = generateResourceStructsWithResources(resources)
-
-  let fileContents = [
-    Header,
-    Imports,
-    externalStruct.description,
-    internalStruct.description,
-    ReuseIdentifier.description,
-    NibResourceProtocol.description,
-    ReusableProtocol.description,
-    ReuseIdentifierUITableViewExtension.description,
-    ReuseIdentifierUICollectionViewExtension.description,
-    NibUIViewControllerExtension.description,
-    ].joinWithSeparator("\n\n")
-
-  // Write file if we have changes
-  if readResourceFile(callInformation.outputURL) != fileContents {
-    writeResourceFile(fileContents, toFileURL: callInformation.outputURL)
-  }
+//  let resources = Resources(resourceURLs: resourceURLs, fileManager: NSFileManager.defaultManager())
+//  let (internalStruct, externalStruct) = generateResourceStructsWithResources(resources)
+//
+//  let fileContents = [
+//    Header,
+//    Imports,
+//    externalStruct.description,
+//    internalStruct.description,
+//    ReuseIdentifier.description,
+//    NibResourceProtocol.description,
+//    ReusableProtocol.description,
+//    ReuseIdentifierUITableViewExtension.description,
+//    ReuseIdentifierUICollectionViewExtension.description,
+//    NibUIViewControllerExtension.description,
+//    ].joinWithSeparator("\n\n")
+//
+//  // Write file if we have changes
+//  if readResourceFile(callInformation.outputURL) != fileContents {
+//    writeResourceFile(fileContents, toFileURL: callInformation.outputURL)
+//  }
+    
+   let jsonRes = JSONResources(resourceURLs: resourceURLs, fileManager: NSFileManager.defaultManager())
+   let jsonStruct = jsonRes.generateResourceStructsWithResources()
+    let jsonfileContents = [
+        Header,
+        Imports,
+        jsonStruct.description
+        ].joinWithSeparator("\n\n")
+    
+    // Write file if we have changes
+    if readResourceFile(callInformation.outputURL) != jsonfileContents {
+        writeResourceFile(jsonfileContents, toFileURL: callInformation.outputURL)
+    }
 
 } catch let InputParsingError.UserAskedForHelp(helpString: helpString) {
   print(helpString)

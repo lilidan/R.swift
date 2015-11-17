@@ -9,7 +9,7 @@
 
 import Foundation
 
-let ResourceFilename = "R.generated.swift"
+let ResourceFilename = "Panna.generated.swift"
 
 let Header = [
   "// This is a generated file, do not edit!",

@@ -339,6 +339,7 @@ struct Xcodeproj {
   func resourceURLsForTarget(targetName: String, pathResolver: Path -> NSURL) throws -> [NSURL] {
     // Look for target in project file
     let allTargets = projectFile.project.targets
+    
     guard let target = allTargets.filter({ $0.name == targetName }).first else {
       let availableTargets = allTargets.map { $0.name }.joinWithSeparator(", ")
       throw ResourceParsingError.ParsingFailed("Target '\(targetName)' not found in project file, available targets are: \(availableTargets)")

@@ -32,6 +32,8 @@
 		D5F12D481BDACB8E009A2C88 /* XCProjectFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D579466A1B9347C20044D2FC /* XCProjectFile.swift */; };
 		D5F12D491BDACB90009A2C88 /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C5A8EE1BB7196000163E71 /* Core.swift */; };
 		D5F795C11BB9983900844EA2 /* MainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F795C01BB9983900844EA2 /* MainTests.swift */; };
+		D68689A21BF9CC2500B643F5 /* Panna.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68689A11BF9CC2500B643F5 /* Panna.swift */; };
+		D68689A31BF9CC2500B643F5 /* Panna.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68689A11BF9CC2500B643F5 /* Panna.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,7 @@
 		D5EA0DFE1A3DF4E300FFEBC4 /* util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = util.swift; sourceTree = "<group>"; };
 		D5F105FE1A3E2BC30077263A /* func.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = func.swift; sourceTree = "<group>"; };
 		D5F795C01BB9983900844EA2 /* MainTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTests.swift; sourceTree = "<group>"; };
+		D68689A11BF9CC2500B643F5 /* Panna.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Panna.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +73,7 @@
 				D579466A1B9347C20044D2FC /* XCProjectFile.swift */,
 				D5646DE11BE2016E0034F4D7 /* Extensions.swift */,
 				D5646DE21BE2016E0034F4D7 /* PBXObject.swift */,
+				D5C4227E1B711FDF004EA9B9 /* R.swiftTests */,
 				D5646DE31BE2016E0034F4D7 /* Serialization.swift */,
 			);
 			name = Xcode.swift;
@@ -82,7 +86,8 @@
 				D5C422811B711FDF004EA9B9 /* Info.plist */,
 				D5F795C01BB9983900844EA2 /* MainTests.swift */,
 			);
-			path = R.swiftTests;
+			name = R.swiftTests;
+			path = ../../../R.swiftTests;
 			sourceTree = "<group>";
 		};
 		D5C5A8ED1BB7193B00163E71 /* OptionKit */ = {
@@ -100,7 +105,6 @@
 				D5EA0DF61A3DF45600FFEBC4 /* R.swift */,
 				D57946691B9347A70044D2FC /* Xcode.swift */,
 				D5C5A8ED1BB7193B00163E71 /* OptionKit */,
-				D5C4227E1B711FDF004EA9B9 /* R.swiftTests */,
 				D5EA0DF51A3DF45600FFEBC4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -117,6 +121,7 @@
 		D5EA0DF61A3DF45600FFEBC4 /* R.swift */ = {
 			isa = PBXGroup;
 			children = (
+				D68689A11BF9CC2500B643F5 /* Panna.swift */,
 				D5EA0DF71A3DF45600FFEBC4 /* main.swift */,
 				D5CD9B3B1B98258700C85F8C /* input.swift */,
 				D5DA249C1B9CB1BF00AAA43E /* processing.swift */,
@@ -239,6 +244,7 @@
 				D586D1C71BE20D8600F18FEC /* PBXObject.swift in Sources */,
 				D5F12D411BDACB87009A2C88 /* main.swift in Sources */,
 				D5F12D451BDACB87009A2C88 /* types.swift in Sources */,
+				D68689A31BF9CC2500B643F5 /* Panna.swift in Sources */,
 				D5F12D421BDACB87009A2C88 /* input.swift in Sources */,
 				D5F795C11BB9983900844EA2 /* MainTests.swift in Sources */,
 				D5F12D481BDACB8E009A2C88 /* XCProjectFile.swift in Sources */,
@@ -261,6 +267,7 @@
 				D5F105FF1A3E2BC30077263A /* func.swift in Sources */,
 				D5646DE41BE2016E0034F4D7 /* Extensions.swift in Sources */,
 				D5B53A171A7D2A9B00F64418 /* values.swift in Sources */,
+				D68689A21BF9CC2500B643F5 /* Panna.swift in Sources */,
 				D5646DE51BE2016E0034F4D7 /* PBXObject.swift in Sources */,
 				D579466B1B9347C20044D2FC /* XCProjectFile.swift in Sources */,
 				D5CD9B3C1B98258700C85F8C /* input.swift in Sources */,
