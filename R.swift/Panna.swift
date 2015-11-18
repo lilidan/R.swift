@@ -7,6 +7,7 @@
 //
 import Foundation
 
+
 let JSONExtensions: Set<String> = ["json"]
 
 func ==(lhs: JSONType, rhs: JSONType) -> Bool {
@@ -26,7 +27,7 @@ private func dataStringToObject(dataString: String) -> AnyObject? {
 struct JSONType:CustomStringConvertible, Equatable, Hashable{
     let name:String
     init(name:String){
-        self.name = name
+        self.name = name.capitalizeFirst
     }
     var description: String {
         return name
@@ -46,9 +47,9 @@ struct JSONVar: CustomStringConvertible {
     
     var description: String {
         if isArray{
-            return "var \(callName):[ \(type)]"
+            return "var \(callName):[\(type)]?"
         }else{
-            return "var \(callName): \(type) "
+            return "var \(callName): \(type)?"
         }
     }
 }
@@ -74,7 +75,7 @@ struct JSONStruct: CustomStringConvertible {
         
         let bodyComponents = [varsString,structsString].filter { $0 != "" }
         let bodyString = indent(bodyComponents.joinWithSeparator("\n\n"))
-        return "struct \(type) {\n\(bodyString)\n}"
+        return "class \(type):NSObject {\n\(bodyString)\n}"
     }
 }
 

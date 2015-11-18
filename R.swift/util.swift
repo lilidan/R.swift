@@ -11,6 +11,15 @@ import Foundation
 
 
 // MARK: Array operations
+extension String {
+
+    var capitalizeFirst:String {
+        var result = self
+        result.replaceRange(startIndex...startIndex, with: String(self[startIndex]).capitalizedString)
+        return result
+    }
+    
+}
 
 extension Array {
   subscript (safe index: Int) -> Element? {

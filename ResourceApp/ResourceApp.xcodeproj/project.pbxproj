@@ -48,7 +48,7 @@
 		D5F05D461BB52078003AE55E /* duplicateJson in Resources */ = {isa = PBXBuildFile; fileRef = D5F05D451BB52078003AE55E /* duplicateJson */; };
 		D5F05D481BB520B1003AE55E /* FilesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F05D471BB520B1003AE55E /* FilesTests.swift */; };
 		D5FAD9091B63B05700ECE230 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D55C6CC61B5D757300301B0D /* Images.xcassets */; };
-		D69BCACD1BF9B9D500C0AE64 /* index.json in Resources */ = {isa = PBXBuildFile; fileRef = D69BCACC1BF9B9D500C0AE64 /* index.json */; };
+		D6CB69A21BFCAD65003C245D /* Index.json in Resources */ = {isa = PBXBuildFile; fileRef = D6CB69A11BFCAD65003C245D /* Index.json */; };
 		D6F9B87E1BFB2B8E00283FBB /* Panna.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F9B87D1BFB2B8E00283FBB /* Panna.generated.swift */; };
 /* End PBXBuildFile section */
 
@@ -107,7 +107,7 @@
 		D5F05D431BB52063003AE55E /* Duplicate.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Duplicate.json; sourceTree = "<group>"; };
 		D5F05D451BB52078003AE55E /* duplicateJson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = duplicateJson; sourceTree = "<group>"; };
 		D5F05D471BB520B1003AE55E /* FilesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilesTests.swift; sourceTree = "<group>"; };
-		D69BCACC1BF9B9D500C0AE64 /* index.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = index.json; sourceTree = "<group>"; };
+		D6CB69A11BFCAD65003C245D /* Index.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Index.json; sourceTree = "<group>"; };
 		D6F9B87D1BFB2B8E00283FBB /* Panna.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Panna.generated.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -165,11 +165,11 @@
 		D55C6CBA1B5D757300301B0D /* ResourceApp */ = {
 			isa = PBXGroup;
 			children = (
-				D69BCACC1BF9B9D500C0AE64 /* index.json */,
 				D55C6CC61B5D757300301B0D /* Images.xcassets */,
 				D51E60BF1BB13612004BB376 /* Images */,
 				D5E513B41B8E10F90035ECAA /* Fonts */,
 				D5F05D401BB51FEA003AE55E /* Files */,
+				D6CB69A11BFCAD65003C245D /* Index.json */,
 				D55C6CBF1B5D757300301B0D /* FirstViewController.swift */,
 				D55C6CC11B5D757300301B0D /* SecondViewController.swift */,
 				D5CBCE481B7682B800C5D96B /* MyViewController.swift */,
@@ -330,10 +330,10 @@
 			files = (
 				D5E513BB1B8E111A0035ECAA /* AveriaLibre-BI.ttf in Resources */,
 				D5AD5C9B1B7A8F4300A8B96C /* CellView.xib in Resources */,
-				D69BCACD1BF9B9D500C0AE64 /* index.json in Resources */,
 				D5159E9E1BBC33680013F52A /* Colors@2x.jpg in Resources */,
 				D5E513BA1B8E111A0035ECAA /* AveriaLibre-B.ttf in Resources */,
 				D50175BE1B5FEFD000DB8314 /* Secondary.storyboard in Resources */,
+				D6CB69A21BFCAD65003C245D /* Index.json in Resources */,
 				D5AD5C911B78FC0500A8B96C /* duplicate.xib in Resources */,
 				D575E25D1B766CD800C22F0B /* My View.xib in Resources */,
 				D5AD5C941B78FC4E00A8B96C /* Duplicate.xib in Resources */,
